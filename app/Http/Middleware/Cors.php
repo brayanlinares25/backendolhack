@@ -16,7 +16,7 @@ class Cors
     public function handle(Request $request, Closure $next): Response
     {
         
-        return $next($request)->header("Acces-Control-Allow-Origin", "http://localhost:5173")
+        return $next($request)->header("Acces-Control-Allow-Origin", "https://dolhack.up.railway.app")
         
             ->header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
             //Headers de la petición
